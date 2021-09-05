@@ -49,6 +49,12 @@ public class ApiController {
 				.build();
 		userList.put(user.getUserId(), user);
 		
+		user = User.builder()
+				.userId("user03")
+				.userName("노수현")
+				.build();
+		userList.put(user.getUserId(), user);
+		
 	}
 	
 	@GetMapping("users")
